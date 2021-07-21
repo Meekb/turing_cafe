@@ -3,7 +3,7 @@ import './Card.css';
 
 const Card = ({id, key, name, date, time, number}) => {
   return (
-    <section className='card'>
+    <section id={id} key={key} className='card'>
       <h2>{name}</h2>
       <p>{date}</p>
       <p>{time}</p>
