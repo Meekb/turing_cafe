@@ -1,3 +1,15 @@
 form {
   display: flex;
 }
+
+input {
+  margin: 25px;
+  font-size: 18px;
+}
+
+.book-btn {
+  margin-top: 23.5px;
+  length: 100px;
+  height: 3vh;
+  font-size: 18px;
+}
