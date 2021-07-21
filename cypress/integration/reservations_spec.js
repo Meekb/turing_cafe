@@ -18,6 +18,14 @@ describe('Reservations display', () => {
     cy.get('form input').should('not.have.value', 'Beth')
   })
 
+  it('Should display the users input in the fields', () => {
+    cy.get('form input:first').type('Beth').should('have.value', 'Beth')
+  })
+
+  it('Should allow user to input informations and make a reservation by clicking the button', () => {
+    cy.get('form input:first').type('Beth').should('have.value', 'Beth')
+    cy.get('date')
+  })
 
 
 });
