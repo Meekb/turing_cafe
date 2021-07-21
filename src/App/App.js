@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      allReservations: null,
+      allReservations: [],
     }
   }
 
@@ -28,7 +28,7 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
-          <Reservations  />
+          <Reservations allReservations={this.state.allReservations} />
         </div>
       </div>
     )
