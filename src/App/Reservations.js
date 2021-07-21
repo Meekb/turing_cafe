@@ -1,10 +1,11 @@
 import React from 'react';
+import Card from './Card';
 import './Reservations.css'
 
 const Reservations = () => {
   return (
     <section className="reservations-container">
-      <h2>Reservations display area</h2>
+      <Card  />
     </section>
   );
 }
