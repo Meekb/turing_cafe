@@ -16,9 +16,9 @@ const Reservations = ({allReservations}) => {
     );
   })
   return (
-    <section className="reservations-container">
+    <main className="reservations-container">
       {resToDisplay}
-    </section>
+    </main>
   );
 
 }
