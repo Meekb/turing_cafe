@@ -24,7 +24,11 @@ describe('Reservations display', () => {
 
   it('Should allow user to input informations and make a reservation by clicking the button', () => {
     cy.get('form input:first').type('Beth').should('have.value', 'Beth')
-    cy.get('date')
+    cy.get('.date').type('07/22').should('have.value', '07/22')
+    cy.get('.time').type('6:45').should('have.value', '6:45')
+    cy.get('.number').type('2').should('have.value', '2')
+    cy.get('.book-btn').click()
+    cy.get('main')
   })
 
 
